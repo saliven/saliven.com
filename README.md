@@ -7,7 +7,7 @@
 - Radix UI
 - Radix Icons
 
-### Inspiration
+### Inspiration
 - rauno.me
 - radix-ui.com
 - stitches.dev
