@@ -25,7 +25,7 @@ export function DockItem({
       <Tooltip.Root>
         <Link target={target} href={href}>
           <Tooltip.Trigger asChild>
-            <a target={target} href={href}>
+            <a aria-label="Dock Item" target={target} href={href}>
               <div
                 className={clsx(
                   'relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border border-gray-5 bg-gray-3 transition-colors duration-300 hover:cursor-pointer hover:border-gray-7 hover:bg-gray-4',
