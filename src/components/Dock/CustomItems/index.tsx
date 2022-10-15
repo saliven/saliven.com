@@ -22,6 +22,8 @@ export function CustomItems() {
             </motion.div>
           </>
         )}
+      </AnimatePresence>
+      <AnimatePresence>
         {lanyard.status?.discord_status !== 'offline' &&
           lanyard.status?.discord_status !== undefined && (
             <>
