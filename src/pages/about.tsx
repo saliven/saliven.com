@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
-import { allProjects, Project } from '../../.contentlayer/generated';
+import { allProjects } from '../../.contentlayer/generated';
 import { PageLayout } from '../components/Layouts/PageLayout';
 import { ProjectItem } from '../components/ProjectItem';
 
