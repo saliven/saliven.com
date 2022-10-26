@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { Dock } from '../components/Dock';
 import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -49,6 +50,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Component {...pageProps} />
       <Dock />
+
+      <Analytics />
     </div>
   );
 }
