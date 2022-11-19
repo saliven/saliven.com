@@ -4,7 +4,7 @@ specifiers:
   '@radix-ui/colors': 0.1.8
   '@radix-ui/react-icons': 1.1.1
   '@radix-ui/react-tooltip': 1.0.2
-  '@types/node': 18.11.0
+  '@types/node': 18.11.9
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vercel/analytics': ^0.1.1
@@ -49,7 +49,7 @@ dependencies:
   tailwindcss: 3.2.4_postcss@8.4.18
 
 devDependencies:
-  '@types/node': 18.11.0
+  '@types/node': 18.11.9
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   eslint: 8.28.0
@@ -328,7 +328,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.3
-      '@types/node': 18.11.0
+      '@types/node': 18.11.9
     dev: false
 
   /@grpc/proto-loader/0.6.13:
@@ -1120,8 +1120,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/18.11.0:
-    resolution: {integrity: sha512-IOXCvVRToe7e0ny7HpT/X9Rb2RYtElG1a+VshjwT00HxrM2dWBApHQoqsI6WiY7Q03vdf2bCrIGzVrkF/5t10w==}
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -3837,7 +3837,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 18.11.0
+      '@types/node': 18.11.9
       long: 4.0.0
     dev: false
 
@@ -3856,7 +3856,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.11.0
+      '@types/node': 18.11.9
       long: 5.2.0
     dev: false
 
