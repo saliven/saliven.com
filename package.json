@@ -15,7 +15,7 @@
     "@vercel/analytics": "^0.1.1",
     "autoprefixer": "10.4.13",
     "clsx": "1.2.1",
-    "contentlayer": "0.2.8",
+    "contentlayer": "0.2.9",
     "framer-motion": "7.6.7",
     "next": "12.3.1",
     "next-contentlayer": "0.2.8",
