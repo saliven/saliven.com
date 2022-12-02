@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Image from 'next/future/image';
+import Image from 'next/image';
 
 export default function Gallery() {
   return (

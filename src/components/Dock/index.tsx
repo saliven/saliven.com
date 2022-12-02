@@ -1,23 +1,17 @@
 import {
-  BookmarkIcon,
-  CameraIcon,
-  DesktopIcon,
   EnvelopeClosedIcon,
   GitHubLogoIcon,
   HomeIcon,
   ImageIcon,
   LetterCaseCapitalizeIcon,
   PersonIcon,
-  RocketIcon,
   TwitterLogoIcon
 } from '@radix-ui/react-icons';
-import { AnimatePresence, motion } from 'framer-motion';
-import { useRouter } from 'next/router';
-import { useLanyard } from 'react-use-lanyard';
+import { motion } from 'framer-motion';
 import { Tooltip } from '../Tooltip';
 import { DockItem } from './DockItem';
-import { SpotifyItem } from './CustomItems/SpotifyItem';
 import { CustomItems } from './CustomItems';
+import { useRouter } from 'next/router';
 
 const variants = {
   initial: {
