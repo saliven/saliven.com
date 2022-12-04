@@ -19,7 +19,7 @@
     "framer-motion": "7.6.18",
     "next": "13.0.6",
     "next-contentlayer": "0.2.9",
-    "next-seo": "5.14.1",
+    "next-seo": "5.15.0",
     "postcss": "8.4.19",
     "prettier": "2.8.0",
     "prettier-plugin-tailwindcss": "0.1.13",
