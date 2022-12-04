@@ -16,7 +16,7 @@
     "autoprefixer": "10.4.13",
     "clsx": "1.2.1",
     "contentlayer": "0.2.9",
-    "framer-motion": "7.6.7",
+    "framer-motion": "7.6.18",
     "next": "13.0.6",
     "next-contentlayer": "0.2.9",
     "next-seo": "5.14.1",

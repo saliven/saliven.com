@@ -13,7 +13,7 @@ specifiers:
   contentlayer: 0.2.9
   eslint: 8.28.0
   eslint-config-next: 13.0.6
-  framer-motion: 7.6.7
+  framer-motion: 7.6.18
   next: 13.0.6
   next-contentlayer: 0.2.9
   next-seo: 5.14.1
@@ -35,7 +35,7 @@ dependencies:
   autoprefixer: 10.4.13_postcss@8.4.19
   clsx: 1.2.1
   contentlayer: 0.2.9
-  framer-motion: 7.6.7_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.6.18_biqbaboplfbrettd7655fr4n2y
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   next-contentlayer: 0.2.9_6jx7hpii6hgsrmhxgqrmo3277u
   next-seo: 5.14.1_6jx7hpii6hgsrmhxgqrmo3277u
@@ -2426,8 +2426,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: false
 
-  /framer-motion/7.6.7_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-vEGsjXygf4qSmgXXsCT1FC56DjiZau9tSQTCchwAP2mOHnYHUy5gbthc4RXFWJh4Z/gFtqE8bzEmjahwOrfT7w==}
+  /framer-motion/7.6.18_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-+njLqmMZBqf+GpIMRkuC7s9A9KrvOfMXm+B/yscKG+/SKAA+qdQFl/3ACU2tAhN7UFau1HuB/vBa/jrWBKVvDg==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -2435,7 +2435,6 @@ packages:
       '@motionone/dom': 10.13.1
       framesync: 6.1.2
       hey-listen: 1.0.8
-      popmotion: 11.0.5
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       style-value-types: 5.1.2
@@ -3773,15 +3772,6 @@ packages:
   /pify/2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /popmotion/11.0.5:
-    resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
-    dependencies:
-      framesync: 6.1.2
-      hey-listen: 1.0.8
-      style-value-types: 5.1.2
-      tslib: 2.4.0
     dev: false
 
   /postcss-import/14.1.0_postcss@8.4.19:
