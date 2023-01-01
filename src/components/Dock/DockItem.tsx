@@ -10,6 +10,7 @@ interface Props {
   target?: string;
   active?: boolean;
   tooltip: React.ReactNode;
+  onClick?: () => void;
 }
 
 export function DockItem({
@@ -18,13 +19,14 @@ export function DockItem({
   href,
   active,
   tooltip,
-  target
+  target,
+  onClick
 }: Props) {
   return (
     <Tooltip.Provider>
       <Tooltip.Root>
         <Tooltip.Trigger asChild>
-          <Link target={target} href={href}>
+          <Link target={target} href={href} onClick={onClick}>
             <div
               className={clsx(
                 'relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-md border border-gray-5 bg-gray-3 transition-colors duration-300 hover:cursor-pointer hover:border-gray-7 hover:bg-gray-4',
