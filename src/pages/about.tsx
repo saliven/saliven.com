@@ -1,7 +1,34 @@
 import { NextSeo } from 'next-seo';
+import { FaDocker, FaReact } from 'react-icons/fa';
+import {
+  SiElixir,
+  SiDocker,
+  SiNextdotjs,
+  SiReact,
+  SiGo,
+  SiNodedotjs,
+  SiGit,
+  SiTailwindcss,
+  SiPostgresql,
+  SiTypescript
+} from 'react-icons/si';
 import { PageLayout } from '../components/Layouts/PageLayout';
+import { TechnologyItem } from '../components/TechnologyItem';
 
-export default function Projects() {
+const TECHNOLOGIES = [
+  { name: 'Docker', icon: <SiDocker size={20} /> },
+  { name: 'React', icon: <SiReact size={20} /> },
+  { name: 'Next.js', icon: <SiNextdotjs size={20} /> },
+  { name: 'Elixir', icon: <SiElixir size={20} /> },
+  { name: 'Go', icon: <SiGo size={20} /> },
+  { name: 'Node.js', icon: <SiNodedotjs size={20} /> },
+  { name: 'Git', icon: <SiGit size={20} /> },
+  { name: 'Tailwind', icon: <SiTailwindcss size={20} /> },
+  { name: 'PostgreSQL', icon: <SiPostgresql size={20} /> },
+  { name: 'TypeScript', icon: <SiTypescript size={20} /> }
+];
+
+export default function About() {
   return (
     <PageLayout>
       <NextSeo title="About" />
@@ -17,6 +44,20 @@ export default function Projects() {
           become interested in distributed systems and infrastructure. I am
           always trying to improve my skills and learn new things.
         </p>
+      </div>
+
+      <div className="mt-10">
+        <h1 className="text-2xl font-medium text-white">Technologies</h1>
+        <p className="mt-2">
+          I have a wide range of technology skills that I utilize to create
+          robust and high-performing applications.
+        </p>
+
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-3">
+          {TECHNOLOGIES.map((t, i) => (
+            <TechnologyItem icon={t.icon} name={t.name} key={i} />
+          ))}
+        </div>
       </div>
     </PageLayout>
   );
