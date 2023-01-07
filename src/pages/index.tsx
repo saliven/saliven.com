@@ -1,8 +1,12 @@
+import { InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
-import { EmptyPlaceholder } from '../components/EmptyPlaceholder';
+import { allProjects } from '../../.contentlayer/generated';
 import { PageLayout } from '../components/Layouts/PageLayout';
+import { ProjectItem } from '../components/ProjectItem';
 
-export default function Home() {
+export default function Home({
+  projects
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <PageLayout>
       <NextSeo title={undefined} defaultTitle="Saliven.com" />
@@ -18,13 +22,30 @@ export default function Home() {
       </p>
 
       <div className="mt-10">
-        <h1 className="text-xl font-medium text-white">Recent posts</h1>
-        <EmptyPlaceholder>
-          <p className="text-sm text-gray-9">
-            Hopefully there will be something here sometime in the future.
-          </p>
-        </EmptyPlaceholder>
+        <h1 className="text-2xl font-medium text-white">Projects</h1>
+        <p className="mt-2">
+          Some of my recent projects that I was working on.
+        </p>
+        <div className="mt-8 flex flex-col space-y-4">
+          {projects.map((p, i) => (
+            <ProjectItem
+              key={i}
+              name={p.title}
+              description={p.description}
+              year={p.year}
+              link={p.link}
+            />
+          ))}
+        </div>
       </div>
     </PageLayout>
   );
+}
+
+export function getStaticProps() {
+  return {
+    props: {
+      projects: allProjects
+    }
+  };
 }
