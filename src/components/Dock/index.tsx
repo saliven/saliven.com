@@ -56,7 +56,7 @@ export function Dock() {
       transition={{ duration: 1, ease: 'easeInOut' }}
       onEnded={(e) => console.log(e)}
     >
-      <div className="flex items-center space-x-3 rounded-xl border border-gray-5 bg-gray-2 bg-opacity-95 p-3 text-gray-12 shadow-2xl backdrop-blur-xl">
+      <div className="flex items-center space-x-3 rounded-xl border border-gray-5 bg-gray-2 bg-opacity-90 p-3 text-gray-12 shadow-2xl backdrop-blur-xl">
         <CustomItems />
 
         {pageItems.map((i, key) => (
