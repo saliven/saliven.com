@@ -1,15 +1,14 @@
-import { InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
 import { allProjects } from '../../.contentlayer/generated';
 import { PageLayout } from '../components/Layouts/PageLayout';
 import { ProjectItem } from '../components/ProjectItem';
 
-export default function Home({
-  projects
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home() {
+  const projects = allProjects.sort((a, b) => b.year - a.year);
+
   return (
-    <PageLayout>
-      <NextSeo title={undefined} defaultTitle="Saliven.com" />
+    <div>
+      <NextSeo title={'Home'} useAppDir />
 
       <div>
         <h1 className="text-4xl font-medium text-white">Saliven</h1>
@@ -28,24 +27,10 @@ export default function Home({
         </p>
         <div className="mt-8 flex flex-col space-y-4">
           {projects.map((p, i) => (
-            <ProjectItem
-              key={i}
-              name={p.title}
-              description={p.description}
-              year={p.year}
-              link={p.link}
-            />
+            <ProjectItem key={i} {...p} />
           ))}
         </div>
       </div>
-    </PageLayout>
+    </div>
   );
-}
-
-export function getStaticProps() {
-  return {
-    props: {
-      projects: allProjects
-    }
-  };
 }
