@@ -35,11 +35,6 @@ const pageItems = [
     name: 'Blog',
     icon: <LetterCaseCapitalizeIcon height={20} width={20} />,
     path: '/blog'
-  },
-  {
-    name: 'Gallery',
-    icon: <ImageIcon height={20} width={20} />,
-    path: '/gallery'
   }
 ];
 
