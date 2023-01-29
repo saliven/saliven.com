@@ -22,7 +22,7 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {
-      fontFamily: { sans: ['Raleway', ...fontFamily.sans] },
+      fontFamily: { sans: ['var(--font-raleway)', ...fontFamily.sans] },
       transitionProperty: {
         width: 'width'
       }

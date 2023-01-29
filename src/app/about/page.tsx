@@ -1,19 +1,18 @@
 import { NextSeo } from 'next-seo';
-import { FaDocker, FaReact } from 'react-icons/fa';
 import {
-  SiElixir,
   SiDocker,
-  SiNextdotjs,
-  SiReact,
-  SiGo,
-  SiNodedotjs,
+  SiElixir,
   SiGit,
-  SiTailwindcss,
+  SiGo,
+  SiNextdotjs,
+  SiNodedotjs,
   SiPostgresql,
+  SiReact,
+  SiTailwindcss,
   SiTypescript
 } from 'react-icons/si';
-import { PageLayout } from '../components/Layouts/PageLayout';
-import { TechnologyItem } from '../components/TechnologyItem';
+import { PageLayout } from '../../components/Layouts/PageLayout';
+import { TechnologyItem } from '../../components/TechnologyItem';
 
 const TECHNOLOGIES = [
   { name: 'Docker', icon: <SiDocker size={20} /> },
@@ -30,8 +29,8 @@ const TECHNOLOGIES = [
 
 export default function About() {
   return (
-    <PageLayout>
-      <NextSeo title="About" />
+    <div>
+      <NextSeo title={'About'} useAppDir />
 
       <div>
         <h1 className="text-4xl font-medium text-white">About</h1>
@@ -59,6 +58,6 @@ export default function About() {
           ))}
         </div>
       </div>
-    </PageLayout>
+    </div>
   );
 }

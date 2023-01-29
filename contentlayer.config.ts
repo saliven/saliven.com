@@ -19,6 +19,10 @@ const Project = defineDocumentType(() => ({
     link: {
       type: 'string',
       required: false
+    },
+    logo: {
+      type: 'string',
+      required: false
     }
   }
 }));

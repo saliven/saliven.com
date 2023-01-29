@@ -1,11 +1,10 @@
 import { NextSeo } from 'next-seo';
 import { EmptyPlaceholder } from '../../components/EmptyPlaceholder';
-import { PageLayout } from '../../components/Layouts/PageLayout';
 
 export default function Blog() {
   return (
-    <PageLayout>
-      <NextSeo title="Blog" />
+    <div>
+      <NextSeo title="Blog" useAppDir />
 
       <div>
         <h1 className="text-4xl font-medium text-white">Blog</h1>
@@ -19,6 +18,6 @@ export default function Blog() {
           Hopefully there will be something here sometime in the future.
         </p>
       </EmptyPlaceholder>
-    </PageLayout>
+    </div>
   );
 }

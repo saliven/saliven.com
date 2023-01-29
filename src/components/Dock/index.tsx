@@ -1,3 +1,5 @@
+'use client';
+
 import {
   EnvelopeClosedIcon,
   GitHubLogoIcon,
@@ -11,7 +13,7 @@ import { motion } from 'framer-motion';
 import { Tooltip } from '../Tooltip';
 import { DockItem } from './DockItem';
 import { CustomItems } from './CustomItems';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 const variants = {
   initial: {
@@ -35,16 +37,11 @@ const pageItems = [
     name: 'Blog',
     icon: <LetterCaseCapitalizeIcon height={20} width={20} />,
     path: '/blog'
-  },
-  {
-    name: 'Gallery',
-    icon: <ImageIcon height={20} width={20} />,
-    path: '/gallery'
   }
 ];
 
 export function Dock() {
-  const router = useRouter();
+  const pathName = usePathname();
 
   return (
     <motion.div
@@ -54,7 +51,6 @@ export function Dock() {
       animate="animate"
       exit="initial"
       transition={{ duration: 1, ease: 'easeInOut' }}
-      onEnded={(e) => console.log(e)}
     >
       <div className="flex items-center space-x-3 rounded-xl border border-gray-5 bg-gray-2 bg-opacity-90 p-3 text-gray-12 shadow-2xl backdrop-blur-xl">
         <CustomItems />
@@ -63,7 +59,7 @@ export function Dock() {
           <DockItem
             key={key}
             href={i.path}
-            active={router.route === i.path}
+            active={pathName === i.path}
             tooltip={<Tooltip>{i.name}</Tooltip>}
           >
             {i.icon}
