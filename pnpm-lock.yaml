@@ -14,7 +14,7 @@ specifiers:
   contentlayer: 0.2.9
   eslint: 8.31.0
   eslint-config-next: 13.1.6
-  framer-motion: 7.8.1
+  framer-motion: 9.0.2
   next: 13.1.6
   next-contentlayer: 0.2.9
   next-seo: 5.15.0
@@ -38,7 +38,7 @@ dependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   clsx: 1.2.1
   contentlayer: 0.2.9
-  framer-motion: 7.8.1_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 9.0.2_biqbaboplfbrettd7655fr4n2y
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   next-contentlayer: 0.2.9_3vryta7zmbcsw4rrqf4axjqggm
   next-seo: 5.15.0_3vryta7zmbcsw4rrqf4axjqggm
@@ -2480,8 +2480,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: false
 
-  /framer-motion/7.8.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-ujUbAaV7e6tElfez3OmttE000ZWLrGgETTQZRjoq+p+w4gHG97hRpzVfUhR6gshWO869UgvvI1Cn+/4euWQg+Q==}
+  /framer-motion/9.0.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-n7ZdIUBrT1xklowQNRQ6/h54+3ysmz422CP0rrhjE1X2tshiJy0WWQ7tv6y/fcOSQd23htNA9vvbUFLYMQ5lEQ==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -2490,7 +2490,7 @@ packages:
       hey-listen: 1.0.8
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      tslib: 2.4.0
+      tslib: 2.4.1
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
     dev: false
