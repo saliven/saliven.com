@@ -1,7 +1,6 @@
 import { Raleway } from '@next/font/google';
 import { Dock } from '../components/Dock';
 import { NextSeo } from 'next-seo';
-import { usePathname } from 'next/navigation';
 
 import 'tailwindcss/tailwind.css';
 
@@ -16,9 +15,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathName = usePathname();
-  const url = `https://saliven.com${pathName}`;
-
   return (
     <html lang="en" className={raleway.variable}>
       <head>
@@ -33,10 +29,6 @@ export default function RootLayout({
             {
               name: 'viewport',
               content: 'width=device-width,initial-scale=1.0'
-            },
-            {
-              name: 'url',
-              content: url
             },
             {
               name: 'theme',
@@ -60,7 +52,6 @@ export default function RootLayout({
             site_name: 'Saliven.com',
             images: [{ url: 'https://saliven.com/og.png' }]
           }}
-          canonical={url}
         />
       </head>
       <body>
