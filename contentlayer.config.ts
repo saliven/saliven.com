@@ -23,6 +23,11 @@ const Project = defineDocumentType(() => ({
     logo: {
       type: 'string',
       required: false
+    },
+    active: {
+      type: 'boolean',
+      required: false,
+      default: true
     }
   }
 }));
