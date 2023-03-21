@@ -12,7 +12,7 @@ export function ProjectItem({
   active
 }: Project) {
   return (
-    <Link href={link} target="_blank">
+    <Link href={link} target={link ? '_blank' : '_self'}>
       <div className="flex items-center space-x-4 rounded-xl border border-white/0 bg-opacity-90 p-4 transition duration-200 hover:border-gray-4 hover:bg-gray-2">
         {logo && (
           <Image
