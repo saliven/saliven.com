@@ -25,7 +25,7 @@ specifiers:
   react-dom: 18.2.0
   react-icons: 4.7.1
   react-use: ^17.4.0
-  react-use-lanyard: 0.2.0
+  react-use-lanyard: 0.3.0
   tailwindcss: 3.2.6
   typescript: 4.9.5
 
@@ -49,7 +49,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
   react-use: 17.4.0_biqbaboplfbrettd7655fr4n2y
-  react-use-lanyard: 0.2.0_react@18.2.0
+  react-use-lanyard: 0.3.0_react@18.2.0
   tailwindcss: 3.2.6_postcss@8.4.21
 
 devDependencies:
@@ -384,7 +384,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       jsbi: 4.3.0
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /@mdx-js/esbuild/2.1.4_esbuild@0.15.10:
@@ -790,7 +790,7 @@ packages:
       open: 8.4.0
       picocolors: 1.0.0
       tiny-glob: 0.2.9
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: true
 
   /@protobufjs/aspromise/1.1.2:
@@ -1459,7 +1459,7 @@ packages:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /camelcase-css/2.0.1:
@@ -3090,7 +3090,7 @@ packages:
   /lower-case/2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /lru-cache/6.0.0:
@@ -3651,7 +3651,7 @@ packages:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /node-domexception/1.0.0:
@@ -3815,7 +3815,7 @@ packages:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
     dependencies:
       no-case: 3.0.4
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /path-exists/4.0.0:
@@ -4098,14 +4098,14 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /react-use-lanyard/0.2.0_react@18.2.0:
-    resolution: {integrity: sha512-30AmleP9ZO3ipghbRAB2mJiAoNqp4+3WsawzNpWqXb+zPRokIRv/W49Lslxeq7lqyIWpt9Q3KBWmRYFIg9MLyw==}
+  /react-use-lanyard/0.3.0_react@18.2.0:
+    resolution: {integrity: sha512-kUglLmUU5b1YK+EF+eMt2gH9SiWS1tk2vF1G8fR0/KVr/fPhYFOZm8XEDU9Xbeix2kNfHm+f1qUnLNuDmUIojA==}
     peerDependencies:
       react: '>=16'
     dependencies:
       react: 18.2.0
-      swr: 1.3.0_react@18.2.0
-      tslib: 2.4.1
+      swr: 2.0.4_react@18.2.0
+      tslib: 2.5.0
     dev: false
 
   /react-use/17.4.0_biqbaboplfbrettd7655fr4n2y:
@@ -4524,12 +4524,14 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /swr/1.3.0_react@18.2.0:
-    resolution: {integrity: sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==}
+  /swr/2.0.4_react@18.2.0:
+    resolution: {integrity: sha512-4GUiTjknRUVuw4MWUHR7mzJ9G/DWL+yZz/TgWDfiA0OZ9tL6qyrTkN2wPeboBpL3OJTkej3pexh3mWCnv8cFkQ==}
+    engines: {pnpm: '7'}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /synckit/0.8.4:
@@ -4537,7 +4539,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/utils': 2.3.1
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: true
 
   /tailwindcss/3.2.6_postcss@8.4.21:
@@ -4644,6 +4646,10 @@ packages:
 
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+    dev: false
+
+  /tslib/2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
 
   /tsutils/3.21.0_typescript@4.9.5:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
@@ -4784,6 +4790,14 @@ packages:
         optional: true
     dependencies:
       '@types/react': 18.0.28
+      react: 18.2.0
+    dev: false
+
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
       react: 18.2.0
     dev: false
 
