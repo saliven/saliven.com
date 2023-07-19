@@ -4,10 +4,10 @@ import {
   EnvelopeClosedIcon,
   GitHubLogoIcon,
   HomeIcon,
-  ImageIcon,
   LetterCaseCapitalizeIcon,
   PersonIcon,
-  TwitterLogoIcon
+  TwitterLogoIcon,
+  CameraIcon
 } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
 import { Tooltip } from '../Tooltip';
@@ -45,7 +45,7 @@ export function Dock() {
 
   return (
     <motion.div
-      className="fixed left-1/2 mb-5 -translate-y-1/2 -translate-x-1/2"
+      className="fixed left-1/2 mb-5 -translate-x-1/2 -translate-y-1/2"
       variants={variants}
       initial="initial"
       animate="animate"

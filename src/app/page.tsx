@@ -1,6 +1,5 @@
 import { NextSeo } from 'next-seo';
 import { allProjects } from '../../.contentlayer/generated';
-import { PageLayout } from '../components/Layouts/PageLayout';
 import { ProjectItem } from '../components/ProjectItem';
 
 export default function Home() {
@@ -9,7 +8,6 @@ export default function Home() {
   return (
     <div>
       <NextSeo title={'Home'} useAppDir />
-
       <div>
         <h1 className="text-4xl font-medium text-white">Saliven</h1>
         <p className="text-xl text-gray-11">Software engineer</p>
