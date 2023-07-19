@@ -1,4 +1,4 @@
-import { Raleway } from '@next/font/google';
+import { Raleway } from 'next/font/google';
 import { Dock } from '../components/Dock';
 import { NextSeo } from 'next-seo';
 

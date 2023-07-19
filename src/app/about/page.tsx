@@ -8,23 +8,26 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiReact,
+  SiRust,
   SiTailwindcss,
+  SiTerraform,
   SiTypescript
 } from 'react-icons/si';
-import { PageLayout } from '../../components/Layouts/PageLayout';
 import { TechnologyItem } from '../../components/TechnologyItem';
 
 const TECHNOLOGIES = [
   { name: 'Docker', icon: <SiDocker size={20} /> },
-  { name: 'React', icon: <SiReact size={20} /> },
-  { name: 'Next.js', icon: <SiNextdotjs size={20} /> },
+  { name: 'Terraform', icon: <SiTerraform size={20} /> },
   { name: 'Elixir', icon: <SiElixir size={20} /> },
   { name: 'Go', icon: <SiGo size={20} /> },
+  { name: 'Rust', icon: <SiRust size={20} /> },
   { name: 'Node.js', icon: <SiNodedotjs size={20} /> },
+  { name: 'TypeScript', icon: <SiTypescript size={20} /> },
+  { name: 'React', icon: <SiReact size={20} /> },
+  { name: 'Next.js', icon: <SiNextdotjs size={20} /> },
   { name: 'Git', icon: <SiGit size={20} /> },
   { name: 'Tailwind', icon: <SiTailwindcss size={20} /> },
-  { name: 'PostgreSQL', icon: <SiPostgresql size={20} /> },
-  { name: 'TypeScript', icon: <SiTypescript size={20} /> }
+  { name: 'PostgreSQL', icon: <SiPostgresql size={20} /> }
 ];
 
 export default function About() {
