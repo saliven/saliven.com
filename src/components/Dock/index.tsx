@@ -7,7 +7,6 @@ import {
   LetterCaseCapitalizeIcon,
   PersonIcon,
   TwitterLogoIcon,
-  CameraIcon
 } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
 import { Tooltip } from '../Tooltip';
