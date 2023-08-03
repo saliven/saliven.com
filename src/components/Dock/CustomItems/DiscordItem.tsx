@@ -14,17 +14,14 @@ export function DiscordItem({ lanyard }: { lanyard: LanyardWebsocket }) {
       href=""
       onClick={() =>
         copyToClipboard(
-          lanyard.status?.discord_user.username +
-            '#' +
-            lanyard.status?.discord_user.discriminator
+          lanyard.status?.discord_user.username ?? ""
         )
       }
       tooltip={
         <Tooltip>
           <div className="flex items-center space-x-1">
             <span>
-              Online at Discord - {lanyard.status?.discord_user.username}#
-              {lanyard.status?.discord_user.discriminator}
+              Discord @{lanyard.status?.discord_user.username}
             </span>
             <CopyIcon height={10} width={10} />
           </div>
