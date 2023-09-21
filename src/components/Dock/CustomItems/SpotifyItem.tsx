@@ -3,6 +3,7 @@ import { FaSpotify } from 'react-icons/fa';
 import { LanyardWebsocket } from 'react-use-lanyard';
 import { Tooltip } from '../../Tooltip';
 import { DockItem } from '../DockItem';
+import Image from 'next/image';
 
 export function SpotifyItem({ lanyard }: { lanyard: LanyardWebsocket }) {
   return (
@@ -13,12 +14,23 @@ export function SpotifyItem({ lanyard }: { lanyard: LanyardWebsocket }) {
       }
       tooltip={
         <Tooltip>
-          <div className="flex items-center space-x-1">
-            <span>
-              Listening to {lanyard.status?.spotify?.song} by{' '}
-              {lanyard.status?.spotify?.artist}
-            </span>
-            <OpenInNewWindowIcon height={10} width={10} />
+          <div className="flex w-56 items-center space-x-2 py-1">
+            <Image
+              src={lanyard.status?.spotify?.album_art_url ?? ''}
+              alt="spotify album art"
+              width={64}
+              height={64}
+              priority={true}
+              className="rounded-[4px]"
+            />
+            <div className="flex flex-col">
+              <h1 className="text-md max-w-28 truncate font-medium text-gray-12">
+                {lanyard.status?.spotify?.song}
+              </h1>
+              <p className="max-w-28 truncate">
+                {lanyard.status?.spotify?.artist}
+              </p>
+            </div>
           </div>
         </Tooltip>
       }

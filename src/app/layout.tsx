@@ -55,7 +55,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div className="flex min-h-screen flex-col bg-gray-1 py-[4rem] px-5 text-gray-11 sm:px-24 md:px-40 lg:px-72 2xl:px-[30rem]">
+        <div className="flex min-h-screen flex-col bg-gray-1 px-5 pb-32 pt-[4rem] text-gray-11 sm:px-24 md:px-40 lg:px-72 2xl:px-[30rem]">
           {children}
           <Dock />
         </div>

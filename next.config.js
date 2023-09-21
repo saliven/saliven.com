@@ -6,6 +6,9 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     appDir: true
+  },
+  images: {
+    domains: ['i.scdn.co']
   }
 };
 
