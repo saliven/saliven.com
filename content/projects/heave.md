@@ -4,4 +4,5 @@ description: A virtual browser that allows you to share your online experiences 
 year: 2023
 link: https://heave.gg
 logo: /logos/heave.png
+active: false
 ---
