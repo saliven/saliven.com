@@ -10,19 +10,20 @@ export function DiscordItem({ lanyard }: { lanyard: LanyardWebsocket }) {
 
   return (
     <DockItem
-      color="text-[#5865F2]"
+      color={
+        lanyard.status &&
+        (lanyard.status.discord_status !== 'offline'
+          ? 'text-[#5865F2]'
+          : 'text-gray-9')
+      }
       href=""
       onClick={() =>
-        copyToClipboard(
-          lanyard.status?.discord_user.username ?? ""
-        )
+        copyToClipboard(lanyard.status?.discord_user.username ?? '')
       }
       tooltip={
         <Tooltip>
           <div className="flex items-center space-x-1">
-            <span>
-              Discord @{lanyard.status?.discord_user.username}
-            </span>
+            <span>Discord @{lanyard.status?.discord_user.username}</span>
             <CopyIcon height={10} width={10} />
           </div>
         </Tooltip>
