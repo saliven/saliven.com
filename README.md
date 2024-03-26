@@ -3,6 +3,7 @@
 This is the repository for my [personal website](https://saliven.com), which is built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/), and [Radix UI](https://radix-ui.com/).
 
 I was inspired by the following websites:
+
 - [rauno.me](https://rauno.me/)
 - [radix-ui.com](https://radix-ui.com/)
 - [stitches.dev](https://stitches.dev/)

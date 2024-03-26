@@ -16,18 +16,18 @@ import {
 import { TechnologyItem } from '../../components/TechnologyItem';
 
 const TECHNOLOGIES = [
-  { name: 'Docker', icon: <SiDocker size={20} />, color: "#1D63ED" },
-  { name: 'Terraform', icon: <SiTerraform size={20} />, color: "#7B42BC" },
-  { name: 'Elixir', icon: <SiElixir size={20} />, color: "#A200C3" },
-  { name: 'Go', icon: <SiGo size={20} />, color: "#00ADD8" },
-  { name: 'Rust', icon: <SiRust size={20} />, color: "#FF9D3B" },
-  { name: 'Node.js', icon: <SiNodedotjs size={20} />, color: "#66CC33" },
-  { name: 'TypeScript', icon: <SiTypescript size={20} />, color: "#3178C6" },
-  { name: 'React', icon: <SiReact size={20} />, color: "#499CC6" },
-  { name: 'Next.js', icon: <SiNextdotjs size={20} />, color: "#FFFFFF" },
-  { name: 'Git', icon: <SiGit size={20} />, color: "#E15B39" },
-  { name: 'Tailwind', icon: <SiTailwindcss size={20} />, color: "#62BAF3" },
-  { name: 'PostgreSQL', icon: <SiPostgresql size={20} />, color: "#40668D" }
+  { name: 'Docker', icon: <SiDocker size={20} />, color: '#1D63ED' },
+  { name: 'Terraform', icon: <SiTerraform size={20} />, color: '#7B42BC' },
+  { name: 'Elixir', icon: <SiElixir size={20} />, color: '#A200C3' },
+  { name: 'Go', icon: <SiGo size={20} />, color: '#00ADD8' },
+  { name: 'Rust', icon: <SiRust size={20} />, color: '#FF9D3B' },
+  { name: 'Node.js', icon: <SiNodedotjs size={20} />, color: '#66CC33' },
+  { name: 'TypeScript', icon: <SiTypescript size={20} />, color: '#3178C6' },
+  { name: 'React', icon: <SiReact size={20} />, color: '#499CC6' },
+  { name: 'Next.js', icon: <SiNextdotjs size={20} />, color: '#FFFFFF' },
+  { name: 'Git', icon: <SiGit size={20} />, color: '#E15B39' },
+  { name: 'Tailwind', icon: <SiTailwindcss size={20} />, color: '#62BAF3' },
+  { name: 'PostgreSQL', icon: <SiPostgresql size={20} />, color: '#40668D' }
 ];
 
 export default function About() {
