@@ -16,7 +16,8 @@ export function DiscordItem({ lanyard }: { lanyard: LanyardWebsocket }) {
           ? 'text-[#5865F2]'
           : 'text-gray-9')
       }
-      href=""
+      href="https://discord.com/users/366544702478090241"
+      target="_blank"
       onClick={() =>
         copyToClipboard(lanyard.status?.discord_user.username ?? '')
       }
