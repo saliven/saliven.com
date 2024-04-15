@@ -23,10 +23,10 @@ export function DiscordItem({ lanyard }: { lanyard: LanyardWebsocket }) {
       }
       tooltip={
         <Tooltip>
-          <div className="flex items-center space-x-1">
-            <span>Discord @{lanyard.status?.discord_user.username}</span>
-            <CopyIcon height={10} width={10} />
-          </div>
+          Discord{' '}
+          <span className="font-medium">
+            @{lanyard.status?.discord_user.username}
+          </span>
         </Tooltip>
       }
     >
